@@ -46,21 +46,35 @@ class CeshiController extends Controller
                 'id' => 1,
                 'src' => 'http://www.admin-api.test/storage/statics/123.mp4',
                 'author' => '张三',
-                'title' => '啦啦啦'
+                'title' => '啦啦啦11111',
+                'loveNumber' => 145655,
+                'commentNumber' => 23335,
+                'shareNumber' => 3320,
             ],
             [
                 'id' => 2,
                 'src' => 'http://www.admin-api.test/storage/statics/456.mp4',
                 'author' => '李四',
-                'title' => '啦啦啦'
+                'title' => '啦啦啦2222222222222',
+                'loveNumber' => 23567,
+                'commentNumber' => 2333,
+                'shareNumber' => 333,
             ],
             [
                 'id' => 1,
                 'src' => 'http://www.admin-api.test/storage/statics/789.mp4',
                 'author' => '王五',
-                'title' => '啦啦啦'
+                'title' => '啦啦啦33333333333',
+                'loveNumber' => 12345,
+                'commentNumber' => 23332,
+                'shareNumber' => 33345,
             ],
         ];
         return response()->json($data);
+    }
+
+    public function getCity()
+    {
+        return response()->json(config('headercity'));
     }
 }

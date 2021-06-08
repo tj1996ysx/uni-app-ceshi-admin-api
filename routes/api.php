@@ -21,3 +21,5 @@ Route::get('/ceshi', 'CeshiController@index');
 
 Route::get('/get_video', 'CeshiController@getVideo');
 
+Route::get('/get_citys', 'CeshiController@getCity');
+
